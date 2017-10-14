@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,
+    minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>jgl resume</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script src="./js/jquery-1.12.2.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+<header></header>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="tom-photo">
+        <img src="imgs/me.jpg" alt="" class="img-circle" id="tomPhotoSmall"/>
+        <span>choose me</span>
+    </div>
+    <div class="tom-photo-big " id="tomPhotoBig">
+        <img src="imgs/meBig.png" alt="" class="img-circle "/>
+    </div>
+    <div class="navbar-header">
+        <button id="navbar-header"
+                type="button" class=" tom-collapsed navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class=" right-titel  hidden-xs">
+        <ul class="nav nav-pills" id="nav-pills">
+            <li role="presentation"><a id="tom-findMain" href="#">首页</a></li>
+            <li role="presentation"><a id="tom-findExp" href="#tom-experience">资料</a></li>
+            <li role="presentation"><a id="tom-findSkill" href="#tom-skill">技能</a></li>
+        </ul>
+    </div>
+    <div class="tom-hidden" id="tom-hidden">
+        <ul id="tom-pills">
+            <li class="tom-present"><a id="tom-findMain2" href="#tom-main-container">首页</a></li>
+            <li class="tom-present"><a id="tom-findExp2" href="#tom-skill">技能</a></li>
+            <li class="tom-present"><a id="tom-findSkill2" href="#tom-contact">资料</a></li>
+        </ul>
+    </div>
+</nav>
+<!--主体内容-->
+<main>
+    <!--轮播图-->
+    <div class="tom-main-container" id="tom-main-container">
+        <div class="tom-pics-li">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1
+                    </div>
+                    <div class="swiper-slide">
+                        2
+                    </div>
+                    <div class="swiper-slide">
+                        既能敲代码还能挣钱是一件愉快的事情，颈椎病都好了一半。
+                    </div>
+                    <div class="swiper-slide">
+                        简化APP开发，h5还能在牛逼的点吗？
+                    </div>
+                    <div class="swiper-slide">
+                        ECMAScript都能搞硬件开发了你知道吗？
+                    </div>
+                    <div class="swiper-slide">Slide 6</div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--基本资料-->
+    <div class="tom-experience" id="tom-experience">
+        <div class="tom-title1">
+            <h3 class="tom-titles1">基本资料</h3>
+
+            <div class="tom-line1"></div>
+        </div>
+        <div class="tom-media1">
+            <h3>广州御银自动柜员机技术有限公司（2009--2015）</h3>
+
+            <p>职位： 技术主管</p>
+
+            <p>工作： ATM,CRS等银行金融自助设备系统开通维护测试升级,员工管理,客户培训</p>
+        </div>
+        <div class="tom-media2">
+            <h3>北京尚德信通技术有限公司（2015--2017）</h3>
+
+            <p>职位： 前端工程师</p>
+
+            <p>
+                工作：使用H5,C3,Jq,js,ajax,
+                bootstrap,Swiper,easyui
+                等前端技术进行PC端移动端网页开发。
+            </p>
+        </div>
+    </div>
+    <!--联系方式-->
+    <div class="tom-contact" id="tom-contact">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6 tom-nopadding">
+                <div class="thumbnail">
+                    <img src="imgs/UN.jpg">
+                    <div class="caption">
+                        <h3>University</h3>
+                        <p>临沂大学 通信工程</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 tom-nopadding">
+                <div class="thumbnail">
+                    <img src="imgs/EML.jpg">
+                    <div class="caption">
+                        <h3>EML</h3>
+                        <p>935850064@qq.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 tom-nopadding">
+                <div class="thumbnail">
+                    <img src="imgs/TEL.jpg">
+                    <div class="caption">
+                        <h3>TEL</h3>
+                        <p>15224226453</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 tom-nopadding">
+                <div class="thumbnail">
+                    <img src="imgs/QQ.jpg">
+                    <div class="caption">
+                        <h3>QQ</h3>
+                        <p>935850064</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--技术栈-->
+    <div class="tom-skill" id="tom-skill">
+        <div class="tom-title2">
+            <h3 class="tom-titles2">技术栈</h3>
+
+            <div class="tom-line2"></div>
+        </div>
+        <div class="tom-skillPics">
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/node.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/vue.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/javascript.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/css.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/html.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/swiper.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/bootstrap.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/jQuery.jpg" alt=""/>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
+                <img src="imgs/git.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+</main>
+<!--底部-->
+<footer>
+    <ul class="tom-footerPics ">
+        <li><a href="https://mail.qq.com/"><img class="img-responsive" src="imgs/canva5s.png" alt=""/></a></li>
+        <li><a href="http://mail.126.com/"><img class="img-responsive" src="imgs/canvas.png" alt=""/></a></li>
+        <li><a href="http://mail.163.com/"><img class="img-responsive" src="imgs/canvas1.png" alt=""/></a></li>
+        <li><a href="https://mail.sohu.com/fe/#/login"><img class="img-responsive" src="imgs/canvas3.png" alt=""/></a>
+        </li>
+        <li><a href="http://mail.sina.com.cn/"><img class="img-responsive" src="imgs/canvas4.png" alt=""/></a></li>
+    </ul>
+</footer>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
