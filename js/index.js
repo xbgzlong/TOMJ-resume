@@ -105,11 +105,11 @@ Progress.prototype= {
 
     }
 };
-var tomMove = function(){
+
     var p1 = new Progress({
         el:'skillMore1',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#fff',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -120,7 +120,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore2',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#fff',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -131,7 +131,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore3',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -142,7 +142,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore4',//canvas元素id
         deg:60,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -153,7 +153,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore5',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -164,7 +164,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore6',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -175,7 +175,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore7',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -186,7 +186,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore8',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -197,7 +197,7 @@ var tomMove = function(){
     var p1 = new Progress({
         el:'skillMore9',//canvas元素id
         deg:80,//绘制角度
-        timer:1,//绘制时间
+        timer:3,//绘制时间
         lineWidth:10,//线宽
         lineBgColor:'#e2e2e2',//底圆颜色
         lineColor:'#356936',//动态圆颜色
@@ -205,11 +205,11 @@ var tomMove = function(){
         fontSize:25,//字体大小
         circleRadius:50//圆半径
     });
-};
-var tomTimer= setInterval(
-    tomMove()
-    ,10000);
-clearInterval(tomTimer);
+
+//var tomTimer= setInterval(
+//    tomMove()
+//    ,10000);
+//clearInterval(tomTimer);
 
 //    顶部隐藏导航栏的淡出淡入
 $(function () {
@@ -261,14 +261,12 @@ $(function () {
     //    $(".tom-skillPic canvas").removeClass("hidecss");
     //});
 
-    $("#tom-findSkill2").click(function () {
-        setTimeout(tomMove(),1000);
-
-    });
-    $("#tom-findSkill").click(function () {
-        setTimeout(tomMove(),1000);
-
-    });
+    //$("#tom-findSkill2").click(function () {
+    //    setTimeout(tomMove(),1000);
+    //});
+    //$("#tom-findSkill").click(function () {
+    //    setTimeout(tomMove(),1000);
+    //});
     //
     //$(window).scroll(function(){
     //    var tomBig = $(window).scrollTop() - $("#tom-skill").offset().top + 150;
