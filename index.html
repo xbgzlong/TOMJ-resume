@@ -9,9 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-    <script src="./js/jquery-1.12.2.js"></script>
+    <script src="./js/jquery-1.12.2.min.js"></script>
     <script src="./js/bootstrap.js"></script>
-    <script src="./js/main.js"></script>
+
 </head>
 <body>
 <header></header>
@@ -19,7 +19,7 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
     <div class="tom-photo">
         <img src="imgs/me.jpg" alt="" class="img-circle" id="tomPhotoSmall"/>
-        <span>choose me</span>
+        <span>贾国龙</span>
     </div>
     <div class="tom-photo-big hidecss" id="tomPhotoBig">
         <img src="imgs/meBig.png" alt="" class="img-circle "/>
@@ -40,13 +40,15 @@
             <li role="presentation"><a id="tom-findMain" href="javascript:;">首页</a></li>
             <li role="presentation"><a id="tom-findExp" href="javascript:;">资料</a></li>
             <li role="presentation"><a id="tom-findSkill" href="javascript:;">技能</a></li>
+            <li role="presentation"><a id="tom-findwork" href="javascript:;">项目</a></li>
         </ul>
     </div>
     <div class="tom-hidden hidecss" id="tom-hidden">
         <ul id="tom-pills">
             <li class="tom-present"><a id="tom-findMain2" href="javascript:;">首页</a></li>
-            <li class="tom-present"><a id="tom-findExp2" href="javascript:;">技能</a></li>
-            <li class="tom-present"><a id="tom-findSkill2" href="javascript:;">资料</a></li>
+            <li class="tom-present"><a id="tom-findExp2" href="javascript:;">资料</a></li>
+            <li class="tom-present"><a id="tom-findSkill2" href="javascript:;">技能</a></li>
+            <li class="tom-present"><a id="tom-findwork2" href="javascript:;">项目</a></li>
         </ul>
     </div>
 </nav>
@@ -57,12 +59,6 @@
         <div class="tom-pics-li">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        1
-                    </div>
-                    <div class="swiper-slide">
-                        2
-                    </div>
                     <div class="swiper-slide">
                         既能敲代码还能挣钱是一件愉快的事情，颈椎病都好了一半。
                     </div>
@@ -75,8 +71,8 @@
                     <div class="swiper-slide">Slide 6</div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next hidden-xs hidden-sm"></div>
+                <div class="swiper-button-prev hidden-xs hidden-sm"></div>
             </div>
         </div>
     </div>
@@ -156,19 +152,19 @@
         <div class="tom-skillPics">
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore1" width="150" height="150"></canvas>
-                <img src="imgs/html.jpg" alt=""/>
+                <img src="imgs/h5.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore2" width="150" height="150"></canvas>
-                <img src="imgs/css.jpg" alt=""/>
+                <img src="imgs/c3.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore3" width="150" height="150"></canvas>
-                <img src="imgs/JavaScript.jpg" alt=""/>
+                <img src="imgs/js.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore4" width="150" height="150"></canvas>
-                <img src="imgs/vue.jpg" alt=""/>
+                <img src="imgs/vue.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore5" width="150" height="150"></canvas>
@@ -176,37 +172,74 @@
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore6" width="150" height="150"></canvas>
-                <img src="imgs/swiper.jpg" alt=""/>
+                <img src="imgs/swiper.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore7" width="150" height="150"></canvas>
-                <img src="imgs/bootstrap.jpg" alt=""/>
+                <img src="imgs/bs.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore8" width="150" height="150"></canvas>
-                <img src="imgs/jQuery.jpg" alt=""/>
+                <img src="imgs/jq.png" alt=""/>
             </div>
             <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 tom-skillPic">
                 <canvas class="" id="skillMore9" width="150" height="150"></canvas>
-                <img src="imgs/git.jpg" alt=""/>
+                <img src="imgs/git.png" alt=""/>
             </div>
         </div>
+    </div>
+    <!--项目案例-->
+    <div class="tom-work" id="tom-work">
+        <div class="tom-title3">
+            <h3 class="tom-titles3">项目案例</h3>
+            <div class="tom-line3"></div>
+        </div>
+        <div class=" swiper-container swiper-container-horizontal">
+            <div class="tom-wrapper swiper-wrapper" style="transform: translate3d(-1065px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片1</font>
+                    </font>
+                </div>
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片7</font>
+                    </font>
+                </div>
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片7</font>
+                    </font>
+                </div>
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片7</font>
+                    </font>
+                </div>
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片7</font>
+                    </font>
+                </div>
+                <div class="swiper-slide tom-slide" style="margin-right: 30px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">幻灯片7</font>
+                    </font>
+                </div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar" style="opacity: 0; transition-duration: 400ms;"><div class="swiper-scrollbar-drag" style="transform: translate3d(136.112px, 0px, 0px); transition-duration: 0ms; width: 45.7473px;"></div></div>
+        </div>
+
     </div>
 </main>
 <!--底部-->
 <footer>
-    <ul class="tom-footerPics ">
-        <li><a href="https://mail.qq.com/"><img class="img-responsive" src="imgs/canva5s.png" alt=""/></a></li>
-        <li><a href="http://mail.126.com/"><img class="img-responsive" src="imgs/canvas.png" alt=""/></a></li>
-        <li><a href="http://mail.163.com/"><img class="img-responsive" src="imgs/canvas1.png" alt=""/></a></li>
-        <li><a href="https://mail.sohu.com/fe/#/login"><img class="img-responsive" src="imgs/canvas3.png" alt=""/></a>
-        </li>
-        <li><a href="http://mail.sina.com.cn/"><img class="img-responsive" src="imgs/canvas4.png" alt=""/></a></li>
-    </ul>
+    <div class="tom-footerPics ">
+        <p>choose me</p>
+    </div>
 </footer>
 <script src="js/swiper.min.js"></script>
-<!--<script src="js/progress.js"></script>-->
 <script src="js/index.js"></script>
-
 </body>
 </html>
