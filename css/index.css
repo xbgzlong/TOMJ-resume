@@ -137,6 +137,10 @@ main {
     overflow: hidden;
 }
 /*ÉèÖÃÂÖ²¥Í¼ÑùÊ½*/
+.tom-pics-li img {
+    height: 100%;
+    width: 100%;
+}
 .tom-main-container {
     height: 470px;
     width: 100%;
