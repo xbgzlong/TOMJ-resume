@@ -169,7 +169,7 @@ main {
     overflow: hidden;
 
 }
-.tom-experience h3 {
+.tom-experience h4 {
     color: #fff;
 }
 .tom-experience p {
@@ -177,16 +177,17 @@ main {
     font-size: 18px;
     word-break: break-all;
 }
-.tom-media1 {
-    width: 45%;
-    height: auto;
-    float: left;
-    padding-left: 10px;
-    padding-bottom: 15px;
-}
+/*.tom-media1 {*/
+    /*width: 45%;*/
+    /*height: auto;*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*padding-bottom: 15px;*/
+/*}*/
 .tom-media2 {
+    margin: 0 auto;
     width: 45%;
-    float: right;
+    text-align: center;
     height: auto;
     padding-right: 10px;
     padding-bottom: 15px;
@@ -227,7 +228,7 @@ main {
     border: none;
     padding: 0;
 }
-.tom-contact .thumbnail h3 {
+.tom-contact .thumbnail h4 {
     color: #fff;
 }
 .tom-contact .thumbnail p {
@@ -242,7 +243,7 @@ main {
     height: 70px;
     border-radius: 50%;
 }
-.tom-contact .thumbnail h3 {
+.tom-contact .thumbnail h4 {
     margin-top: 10px;
 }
 /*技术栈效果*/
@@ -280,7 +281,7 @@ main {
     border-radius: 50%;
     text-align: center;
 }
-.tom-skill h3 {
+.tom-skill h4{
     color: #fff;
     text-align: center;
 }
@@ -306,22 +307,26 @@ main {
     width: 100%;
     height: 50px;
     position: relative;
-
+}
+.tom-slide  img{
+    width: 100%;
+    height: 100%;
 }
 
 .tom-titles3 {
     width: 100px;
+    text-align: center;
     background-color: #333;
     color :#fff;
     z-index: 3;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -85%);
+    transform: translate(-45%, -85%);
 
 }
 #tom-work .tom-wrapper {
-    height: 450px;
+    height: 400px;
     width: 100%;
     padding: 25px 0;
 }
@@ -329,7 +334,11 @@ main {
     hight:400px;
     width: 300px;
 
-}
+} #tom-work .tom-wrapper .tom-slide1{
+      hight:400px;
+      width: 450px;
+
+  }
 /*底部效果*/
 footer {
     height: 70px;
