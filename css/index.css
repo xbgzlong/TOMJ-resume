@@ -142,24 +142,24 @@ main {
     width: 100%;
 }
 .tom-main-container {
-    height: 470px;
+    height: 450px;
     width: 100%;
     position: relative;
-    background-color: #31b0d5;
-    background-image: url(../imgs/timg.jpg);
-    background-origin: content-box;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #470000;
+    /*/!*background-image: url(../imgs/timg.jpg);*!/*/
+    /*background-origin: content-box;*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
 }
 .tom-pics-li {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 70%;
-    width: 85%;
-    border-radius: 5px;
-    border: 5px solid #000;
+    height: 100%;
+    width: 100%;
+    /*border-radius: 5px;*/
+    border: 5px solid #470000;
 }
 /*设置基本资料效果*/
 .tom-experience {
